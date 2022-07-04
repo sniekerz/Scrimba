@@ -1,0 +1,84 @@
+@font-face {
+  font-family: "TimerFont";
+  src: url("fonts/cursedtimerulil-aznm-webfont.woff") format("woff");
+}
+
+body {
+  margin: 50px;
+  font-family: "Josefin Sans", sans-serif;
+
+  color: whitesmoke;
+  text-align: center;
+}
+
+.fullboard {
+  background-color: #1b244a;
+  padding-bottom: 150px;
+  border-radius: 50px;
+}
+
+.scoreboard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 30px 0;
+  font-size: 35px;
+  font-family: "TimerFont";
+  width: 200px;
+  height: 150px;
+  background-color: #080001;
+}
+
+.score {
+  color: red;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+h3 {
+  margin: 150px 0 30px 0;
+  font-size: 50px;
+}
+
+.addscore {
+  display: flex;
+  justify-content: space-between;
+}
+
+.plusone {
+  font-family: "TimerFont";
+  widht: 60px;
+  border: 1px solid whitesmoke;
+  padding: 15px 15px;
+  border-radius: 5px;
+}
+
+.plustwo {
+  widht: 60px;
+  font-family: "TimerFont";
+  border: 1px solid whitesmoke;
+  padding: 15px 15px;
+  border-radius: 5px;
+}
+
+.plusthree {
+  font-family: "TimerFont";
+  widht: 60px;
+  border: 1px solid whitesmoke;
+  padding: 15px 15px;
+  border-radius: 5px;
+}
+
+button {
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: darkred;
+  font-weight: bold;
+  width: 200px;
+  margin-top: 30px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
