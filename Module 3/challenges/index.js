@@ -57,11 +57,11 @@
 //   errorEl.textContent = "Something went wrong, please try again";
 // }
 
-let num1 = 8;
-let num2 = 2;
-let sumEl = document.getElementById("sum-el");
-document.getElementById("num1-el").textContent = num1;
-document.getElementById("num2-el").textContent = num2;
+// let num1 = 8;
+// let num2 = 2;
+// let sumEl = document.getElementById("sum-el");
+// document.getElementById("num1-el").textContent = num1;
+// document.getElementById("num2-el").textContent = num2;
 
 // Create four functions: add(), subtract(), divide(), multiply()
 // Call the correct function when the user clicks on one of the buttons
@@ -71,22 +71,140 @@ document.getElementById("num2-el").textContent = num2;
 // E.g. if the user clicks on the "Plus" button, you should render
 // "Sum: 10" (since 8 + 2 = 10) inside the paragraph with id="sum-el"
 
-function add() {
-  let sum = num1 + num2;
-  sumEl.textContent = sum;
-}
+// function add() {
+//   let sum = num1 + num2;
+//   sumEl.textContent = sum;
+// }
 
-function subtract() {
-  let sum = num1 - num2;
-  sumEl.textContent = sum;
-}
+// function subtract() {
+//   let sum = num1 - num2;
+//   sumEl.textContent = sum;
+// }
 
-function divide() {
-  let sum = num1 / num2;
-  sumEl.textContent = sum;
-}
+// function divide() {
+//   let sum = num1 / num2;
+//   sumEl.textContent = sum;
+// }
 
-function multiply() {
-  let sum = num1 * num2;
-  sumEl.textContent = sum;
-}
+// function multiply() {
+//   let sum = num1 * num2;
+//   sumEl.textContent = sum;
+// }
+
+// let thisPerson = {
+//   name: "Niek",
+//   age: "25",
+//   country: "Netherlands",
+// };
+
+// function logData() {
+//   console.log(
+//     thisPerson.name +
+//       " is " +
+//       thisPerson.age +
+//       " years old and lives in " +
+//       thisPerson.country
+//   );
+// }
+
+// logData();
+
+// let age = 23;
+
+// if (age < 6) {
+//   console.log("You can travel for free");
+// } else if (age < 18) {
+//   console.log("You will get a child discount");
+// } else if (age < 27) {
+//   console.log("You will get a student discount");
+// } else if (age < 67) {
+//   console.log("You will pay full price");
+// } else {
+//   console.log("You will get a senior discount");
+// }
+
+// let largeCountries = [
+//   "China",
+//   "India",
+//   "United States",
+//   "Pakistan",
+//   "Indonesia",
+// ];
+
+// for (let i = 0; i < largeCountries.length; i++) {
+//   console.log("- " + largeCountries[i]);
+// }
+
+// let largeCountries = ["Tuvalu", "India", "USA", "Indonesia", "Monaco"];
+// console.log(largeCountries);
+
+// largeCountries.pop();
+// largeCountries.shift();
+// largeCountries.pop();
+// largeCountries.unshift("China");
+// largeCountries.push("Pakistan");
+// largeCountries.push("Indonesia");
+// console.log(largeCountries);
+
+// let dayOfMonth = 13;
+// let weekday = "Friday";
+
+// if (dayOfMonth === 13 && weekday === "Friday") {
+//   console.log("😱");
+// } else {
+//   console.log("we're okay!");
+// }
+
+// let hands = ["rock", "paper", "scissors"];
+
+// function randomHand() {
+//   let indexNumber = Math.floor(Math.random() * 3);
+//   return hands[indexNumber];
+// }
+
+// console.log(randomHand());
+
+// const fighters = [
+//   "🐉",
+//   "🐥",
+//   "🐊",
+//   "💩",
+//   "🦍",
+//   "🐢",
+//   "🐩",
+//   "🦭",
+//   "🦀",
+//   "🐝",
+//   "🤖",
+//   "🐘",
+//   "🐸",
+//   "🕷",
+//   "🐆",
+//   "🦕",
+//   "🦁",
+// ];
+
+// const stageEl = document.getElementById("stage");
+// const fightButton = document.getElementById("fightButton");
+
+// fightButton.addEventListener("click", function () {
+//   const randomIndex1 = Math.floor(Math.random() * fighters.length);
+//   const randomIndex2 = Math.floor(Math.random() * fighters.length);
+//   stageEl.textContent = `${fighters[randomIndex1]} vs ${fighters[randomIndex2]}`;
+// });
+
+// let fruit = ["🍎", "🍊", "🍎", "🍎", "🍊"];
+// let appleShelf = document.getElementById("apple-shelf");
+// let orangeShelf = document.getElementById("orange-shelf");
+
+// function sortFruit() {
+//   for (i = 0; i < fruit.length; i++) {
+//     console.log(fruit[i], "🍎");
+//     if (fruit[i] === "🍎") {
+//       appleShelf.textContent += "🍎";
+//     } else {
+//       orangeShelf.textContent += "🍊";
+//     }
+//   }
+// }
+// sortFruit();
