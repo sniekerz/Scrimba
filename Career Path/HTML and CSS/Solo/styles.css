@@ -19,6 +19,7 @@ body {
   background-image: url("images/hero.jpg");
   background-size: fill;
   background-position: center;
+  background-repeat: no-repeat;
   height: 515px;
   display: flex;
   flex-direction: column;
