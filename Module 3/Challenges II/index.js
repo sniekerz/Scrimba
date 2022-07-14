@@ -42,19 +42,24 @@
 // // Go through all variables and decide if they should be let or const
 // // Change the console logs to use template strings instead of double quotes
 
-let myCourses = [
-  "Learn CSS Animations",
-  "UI Design Fundamentals",
-  "Intro to Clean Code",
-];
+// let myCourses = [
+//   "Learn CSS Animations",
+//   "UI Design Fundamentals",
+//   "Intro to Clean Code",
+// ];
 
 // Create a function that takes a single parameter, an array,
 // and logs all the items of the array to the console.
-function showArray(array) {
-  for (let i = 0; i < array.length; i++) {
-    console.log(array[i]);
-  }
-}
+// function showArray(array) {
+//   for (let i = 0; i < array.length; i++) {
+//     console.log(array[i]);
+//   }
+// }
 // Call the function while passing in myCourses as an argument
 
-showArray(myCourses);
+// showArray(myCourses);
+
+// Save a value to localStorage
+localStorage.setItem("myCredits", "100");
+// Delete your code and refresh the page
+// Fetch your value from localStorage and log it out
