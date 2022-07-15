@@ -1,0 +1,41 @@
+body {
+  font-family: "Roboto";
+  margin: 20px;
+  color: #2b2839;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  border: 3px solid white;
+  margin: auto 0;
+}
+
+.card {
+  display: flex;
+  background-color: #f4a261;
+  margin: 0 auto;
+  width: 600px;
+  justify-content: space-around;
+  padding: 20px;
+  border-bottom: 10px solid #e76f51;
+  border-radius: 0 20px 0 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.twitter-logo {
+  width: 23px;
+  height: 19px;
+}
+
+.description-wrapper {
+  background-color: #faedcd;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.middle-wrapper {
+  height: 200px;
+  margin: auto 0;
+}
