@@ -1,40 +1,118 @@
 body {
-  font-family: "Roboto", sans-serif;
   font-size: 16px;
   color: #2b283a;
+  font-family: "Roboto", sans-serif;
   margin: 0;
 }
 
-header {
-  background-color: #5f29a3;
-  padding: 45px 0;
+/* typography */
+
+h1,
+h3 {
+  margin: 0;
 }
 
 h1 {
   color: whitesmoke;
   font-size: 36px;
-  margin: 0;
+}
+
+h2 {
+  margin-top: 0;
 }
 
 h3 {
   color: #d0aaff;
   font-size: 20px;
-  margin: 0;
 }
 
-section {
+/* 
+Challenge:
+1. Increase the line-height of the 
+ paragraph text to 23px;
+*/
+
+p {
+  line-height: 23px;
+}
+
+/* links */
+
+.btn {
+  padding: 10px 19px;
+  border-radius: 4.6px;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.more {
+  color: #5f29a3;
+  background-color: #f0e0ff;
+}
+
+.buy {
+  color: whitesmoke;
+  background-color: #5f29a3;
+}
+
+.buy:hover {
+  background-color: #f3e885;
+  color: #2b283a;
+}
+
+.about {
+  color: #5f29a3;
+  background-color: whitesmoke;
+}
+a {
+  color: #ef5839;
+  text-decoration: underline dotted;
+}
+
+a:hover,
+a:active {
+  color: #d4b44c;
+}
+
+/* layout */
+
+header,
+section,
+footer {
   padding: 45px 0;
+}
+
+header,
+.section-two {
+  background-color: #5f29a3;
+}
+
+.section-two {
+  color: whitesmoke;
+}
+
+.container {
+  width: 620px;
+  margin: 0 auto;
 }
 
 .main-image {
   width: 100%;
 }
-/* 
-Challenge:
-1. Create a "section" selector and give it the 
-   same padding as the header.
-2. In index.html, find the image of the purple 
-   sneakers and attach a class to it. 
-3. Make it so this image takes up 100% 
-   of the section width.
-*/
+
+.section-two-image-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.feature-image {
+  width: 300px;
+  border-radius: 4.6px;
+}
+
+footer {
+  text-align: center;
+  color: #5f29a3;
+}
