@@ -1,48 +1,48 @@
 const slides = document.getElementsByClassName("carousel-item");
 let slidePosition = 0;
 const totalSlides = slides.length;
-const nextButton = document.getElementById("carousel-button-next");
-const prevButton = document.getElementById("carousel-button-prev");
-document.getElementById;
+const nextSlide = document.getElementById("carousel-button-next");
+const prevSlide = document.getElementById("carousel-button-prev");
 
-nextButton.addEventListener("click", moveToNextSlide);
+nextSlide.addEventListener("click", moveToNextSlide);
+prevSlide.addEventListener("click", moveToPrevSlide);
 
-prevButton.addEventListener("click", moveToPrevSlide);
+function hideAllSlides() {
+  for (let slide of slides) {
+    slide.classList.remove("carousel-item-visible");
+    slide.classList.add("carousel-item-hidden");
+  }
+}
 
 function moveToNextSlide() {
-  console.log("move to the next slide");
+  hideAllSlides();
+
   if (slidePosition === totalSlides - 1) {
     slidePosition = 0;
-    console.log(slidePosition);
   } else {
     slidePosition++;
-    console.log(slidePosition);
-    slides[slidePosition].classList.add("carousel-item-visible");
-    slides[slidePosition - 1].classList.remove("carousel-item-visible");
   }
+  slides[slidePosition].classList.add("carousel-item-visible");
 }
 
 function moveToPrevSlide() {
-  console.log("move to the previous slide");
+  hideAllSlides();
   if (slidePosition === 0) {
-    slidePosition = 2;
+    slidePosition = slides.length - 1;
     console.log(slidePosition);
   } else {
-    slidePosition -= 1;
+    slidePosition--;
     console.log(slidePosition);
   }
-}
-
-function hideAllSlides() {
-  for (let slide of slides);
   slides[slidePosition].classList.add("carousel-item-visible");
 }
+
 /*
-    Hiding non-active slides
+    Moving to the previous slide
     
-    1) In our 'styles.css', add a new class 'carousel-item-hidden' that is set to display none
-    2) Create a new function called 'hideAllSlides'
-    3) Inside 'hideAllSlides' use a 'for of loop' to iterate through the slides (each iteration will give you direct access to 'carousel-item')
-    4) When inside the 'for of loop', remove the class 'carousel-item-visible' and add the class 'carousel-item-hidden' - all our slides will now be hidden, and inside 'moveToNextSlide' at the end, we add back the slide we want visible!
-    5) Call 'hideAllSlides' right away within the function 'moveToNextSlide' - make sure it's before any other code!
+    1) As we did with 'moveToNextSlide', call 'hideAllSlides' within 'moveToPrevSlide'
+    2) Check if the slidePosition === 0, if it is, we know that we're on the first slide, so to go back, we take 'totalSlides' and decrease the value by 1. An example: 3-1 = 2, which gives us slidePosition 2 which is the last item in our array of slides [0, 1, 2] <- these are the indexes in the array, the actual values can be accessed by 'slides[slidePosition]' as we did for 'moveToNextSlide'
+    3) If we are not on the 'slidePosition' of 0, we are not on the first slide item, therefore we just decrease 'slidePosition'. This is the reason we check for 0 prior, because if we are on 0 and try decrease from 0, we'll end up passing an index value to the 'slides' that doesn't exist - 'slides[-1]' <- like so! This will cause an error!
+    4) As we did in 'moveToNextSlide', we want to add the class of 'carousel-item-visible'
+    5) Check both your buttons and see the result!
 */
