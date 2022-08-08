@@ -16,6 +16,13 @@ img {
   display: block;
 }
 
+.image-full {
+  max-height: 300px;
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 2em;
+}
+
 /* =================
 Typography
 ================= */
@@ -34,6 +41,9 @@ h1 {
   margin: 0;
 }
 
+h3 {
+  color: #1792d2
+}
 a {
   color: #1792d2;
 }
@@ -79,6 +89,11 @@ strong {
 .article-info {
   margin: 2rem 0;
 }
+
+.widget-recent-post-title {
+  color: #143774;
+}
+
 
 
 /* =================

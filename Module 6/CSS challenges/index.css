@@ -1,0 +1,131 @@
+html {
+  font-size: 0.9rem;
+}
+
+body {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  margin: 0;
+}
+
+img {
+  max-width: 200px;
+  border: 10px solid whitesmoke;
+  border-radius: 200px;
+}
+
+.container {
+  max-width: 570px;
+  margin: 0 auto;
+}
+
+.bold-text {
+  font-weight: 900;
+  display: block;
+}
+
+h1 .bold-text {
+  font-size: 5rem;
+}
+
+h2 .bold-text {
+  font-size: 3.75rem;
+}
+
+h1,
+h2 {
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 3.75rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2.625rem;
+  margin-top: 0;
+}
+
+h3 {
+  font-size: 2.25rem;
+  font-weight: 900;
+  margin: 0;
+}
+
+a {
+  color: #99d930;
+  font-weight: 900;
+}
+
+a:hover,
+a:focus {
+  color: #131313;
+}
+
+.small-text {
+  font-size: 1rem;
+  margin-top: 0.3125em;
+}
+
+p {
+  margin-bottom: 0;
+}
+header,
+section {
+  padding: 6.25em 0;
+}
+
+.inverse {
+  color: #fff;
+  background: #252525;
+}
+
+.btn {
+  background-color: #99d930;
+  color: #252525;
+  padding: 0.75em 1.2em;
+  display: inline-block;
+  margin-top: 1.5em;
+  text-decoration: none;
+  border-radius: 0.25em;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #252525;
+  color: #fff;
+}
+
+.lines {
+  padding: 0.5em 0;
+  border-top: 1px solid #c4c4c4;
+  border-bottom: 1px solid #c4c4c4;
+}
+
+section .btn:hover {
+  background-color: #fff;
+  color: #252525;
+}
+
+h1 span,
+h2 span,
+p span,
+p time {
+  color: #99d930;
+}
+
+h2 span {
+  color: #99d930;
+}
+
+/* -------------
+  MEDIA QUERRIES
+  -------------- */
+
+@media (min-width: 600px) {
+  html {
+    font-size: 1.3125rem;
+  }
+}
