@@ -9,15 +9,20 @@ body {
   margin: 0;
 }
 
-img {
-  max-width: 200px;
+.profile-pic {
+  width: 200px;
   border: 10px solid whitesmoke;
   border-radius: 200px;
+}
+
+img {
+  max-width: 100%;
 }
 
 .container {
   max-width: 570px;
   margin: 0 auto;
+  padding: 0 2em;
 }
 
 .bold-text {
@@ -72,11 +77,16 @@ a:focus {
 p {
   margin-bottom: 0;
 }
-header,
+
 section {
   padding: 6.25em 0;
 }
 
+header {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
 .inverse {
   color: #fff;
   background: #252525;
@@ -127,5 +137,76 @@ h2 span {
 @media (min-width: 600px) {
   html {
     font-size: 1.3125rem;
+  }
+}
+
+@media (min-width: 750px) {
+  .make-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .articles,
+  .about-me {
+    width: 50%;
+    justify-content: center;
+  }
+
+  .articles.inverse,
+  .articles.inverse .bold-text,
+  .articles.inverse .small-text,
+  .articles.inverse span,
+  .articles.inverse time,
+  .articles.inverse a {
+    background-color: #99d930;
+    color: #252525;
+  }
+
+  .lines {
+    border-color: #252525;
+  }
+
+  .articles.inverse a.btn {
+    background-color: #252525;
+    color: #fff;
+  }
+
+  .articles.inverse a.btn:hover,
+  .articles.inverse a.btn:focus {
+    background-color: #fff;
+    color: #252525;
+  }
+
+  .portfolio {
+    background-color: #252525;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+
+  .portfolio .container {
+    max-width: 1200px;
+  }
+
+  .portfolio-item {
+    width: 28%;
+  }
+
+  .work {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .portfolio .container h2.lines {
+    border-color: #fff;
+  }
+
+  .portfolio-item img {
+    height: 15em;
+    width: 100%;
+    object-fit: cover;
   }
 }
