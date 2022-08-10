@@ -30,7 +30,7 @@ body {
 }
 
 .score {
-  color: red;
+  color: rgb(156, 255, 7);
 }
 .container {
   display: flex;
