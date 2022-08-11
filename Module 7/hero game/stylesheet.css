@@ -73,7 +73,7 @@ main {
 }
 
 .avatar {
-  width: 6vh;
+  width: 5vh;
   border: 2px solid #000721;
   max-width: 100%;
   opacity: 0.8;
@@ -152,8 +152,8 @@ main {
 
 .dice,
 .placeholder-dice {
-  height: 3vh;
-  width: 3vh;
+  height: 2vh;
+  width: 2vh;
   background: #fff;
   border-radius: 5px;
   border: 1px solid #666;
@@ -165,9 +165,9 @@ main {
 @media (min-width: 550px) {
   .dice-container .dice,
   .dice-container .placeholder-dice {
-    height: 5vh;
-    width: 5vh;
-    line-height: 5vh;
+    height: 4vh;
+    width: 4vh;
+    line-height: 4vh;
   }
 }
 
