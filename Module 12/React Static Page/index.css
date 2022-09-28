@@ -1,5 +1,30 @@
-/* html,
 body {
   margin: 0;
-  padding: 0;
-} */
+}
+
+.nav-items {
+  list-style: none;
+  display: flex;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid 1px gray;
+  box-shadow: 2px 2px 10px gray;
+}
+
+.nav-items > li {
+  padding: 10px;
+}
+
+.nav-image {
+  width: 60px;
+}
+
+.footer {
+  background-color: gray;
+  color: #fefefe;
+  padding: 10px;
+}
