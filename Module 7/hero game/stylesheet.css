@@ -90,11 +90,11 @@ main {
 }
 
 .health {
+  margin: 0;
   font-size: 1.1rem;
   font-weight: normal;
   width: 90%;
   text-align: left;
-  margin: 1vh 5%;
   color: #ccc;
   letter-spacing: 0.03em;
 }

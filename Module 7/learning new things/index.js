@@ -265,3 +265,4 @@ Create a navbar in JSX:
         "About", and "Contact"
     - Don't worry about styling yet - it'll just be plain-looking HTML for now
 */
+
