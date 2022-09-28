@@ -15,6 +15,7 @@ function Character(data) {
   };
 
   this.takeDamage = function (attackScoreArray) {
+
     const totalDamage = attackScoreArray.reduce(function (total, num) {
       return total + num;
     });
@@ -37,6 +38,7 @@ function Character(data) {
                   ${diceArray}
               </div>
           </div>`;
+
   };
 }
 

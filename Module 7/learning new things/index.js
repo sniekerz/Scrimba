@@ -199,49 +199,6 @@ Challenge:
 // const sandraKaye = new DevProfile(sandraKayeProfileData);
 // sandraKaye.summariseDev();
 
-<<<<<<< HEAD
-// const grades = [75, 83, 66, 43, 55, 99, 87, 16, 89, 64, 70, 80, 94, 77, 66, 73];
-
-// /*
-// Challenge
-// 1. Use the .reduce() method to find the total of all of the students grades.
-// 2. Do some simple maths to log out the class average.
-// */
-
-// const classTotal = grades.reduce(function (total, currentElement) {
-//   return total + currentElement;
-// });
-
-// const classAverage = classTotal / grades.length;
-// console.log(
-//   `The classtotal = ${classTotal}, the number of grades is: ${
-//     grades.length
-//   }, resulting in an average of ${Math.round(classAverage)}`
-// );
-
-// const exerciseTimeMins = 30;
-
-// const message =
-//   exerciseTimeMins < 30
-//     ? `You need to try harder`
-//     : exerciseTimeMins < 60
-//     ? `Doing good`
-//     : `Excelent!`;
-
-// console.log(message);
-
-const playerGuess = 6;
-const correctAnswer = 6;
-
-const message =
-  playerGuess < correctAnswer
-    ? `Wrong, too low!`
-    : playerGuess > correctAnswer
-    ? `Wrong, too high!`
-    : `Correct!`;
-
-console.log(message);
-=======
 // function alertSpend(amount){
 // 	return `Warning! You just spent £${amount}!`
 // }
@@ -308,4 +265,4 @@ Create a navbar in JSX:
         "About", and "Contact"
     - Don't worry about styling yet - it'll just be plain-looking HTML for now
 */
->>>>>>> 86ef5f4d2dd05518271756bbb9cef5add885f25b
+

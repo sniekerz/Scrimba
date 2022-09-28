@@ -12,7 +12,6 @@ function attack() {
   }
 }
 
-/*CHALLENGE
 1. Inside endGame(), create a const called endMessage. 
 2. Figure out how to set endMessage to say either "The 
 Wizard Wins", "The Orc is Victorious", or "No victors - 
@@ -21,6 +20,7 @@ of the characters.
 3. Log out endMessage
 */
 
+
 function endGame() {
   const endMessage =
     wizard.health === 0 && orc.health === 0
@@ -28,8 +28,10 @@ function endGame() {
       : wizard.health > 0
       ? "The Wizard Wins"
       : "The Orc is Victorious";
+
   const endEmoji = wizard.health > 0 ? `🔮` : `☠️`;
 }
+
 
 function render() {
   document.getElementById("hero").innerHTML = wizard.getCharacterHtml();
