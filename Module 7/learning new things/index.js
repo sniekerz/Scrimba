@@ -199,6 +199,7 @@ Challenge:
 // const sandraKaye = new DevProfile(sandraKayeProfileData);
 // sandraKaye.summariseDev();
 
+<<<<<<< HEAD
 // const grades = [75, 83, 66, 43, 55, 99, 87, 16, 89, 64, 70, 80, 94, 77, 66, 73];
 
 // /*
@@ -240,3 +241,71 @@ const message =
     : `Correct!`;
 
 console.log(message);
+=======
+// function alertSpend(amount){
+// 	return `Warning! You just spent £${amount}!`
+// }
+
+// const alertSpend = (name, amount) =>
+//   `Warning! ${name}, you just spent $${amount}!`;
+// console.log(alertSpend("Niek", 300));
+
+// function speedWarning(speed) {
+//   return `You are going at ${speed} mph!`;
+// }
+
+// const speedWarning = (speedlimit, speed) => {
+//   if (speed > speedlimit) {
+//     return `Warning you are driving faster than ${speed} miles per hour`;
+//   }
+// };
+
+// console.log(speedWarning(30, 40));
+
+/*
+Challenge
+1. Refactor this function so it only warns drivers 
+   who are going over the speed limit.
+2. The function now needs to take in two parameters. 
+   The first is the speed limit, the second is the 
+   driver's actual speed.
+*/
+
+// const distanceTraveledMiles = [267, 345, 234, 190, 299];
+
+// const distanceTraveledKm = distanceTraveledMiles.map((distance) =>
+//   Math.round(distance * 1.6)
+// );
+
+// console.log(distanceTraveledKm);
+
+/*
+Challenge
+1. Refactor this .map method so the inline function is
+   an arrow function. 
+2. Write the least amount of code possible.
+*/
+
+const page = (
+  <div>
+    <h1 className="header">This is JSX</h1>
+    <p>This is a paragraph</p>
+  </div>
+);
+
+console.log(page);
+
+ReactDOM.render(page, document.getElementById("root"));
+
+/* 
+Challenge: 
+
+Create a navbar in JSX:
+    - Use the semantic `nav` element as the parent wrapper
+    - Have an h1 element with the brand name of your "website"
+    - Insert an unordered list for the other nav elements
+        - Inside the `ul`, have three `li`s for "Pricing",
+        "About", and "Contact"
+    - Don't worry about styling yet - it'll just be plain-looking HTML for now
+*/
+>>>>>>> 86ef5f4d2dd05518271756bbb9cef5add885f25b
