@@ -2,9 +2,16 @@ const modal = document.getElementById("modal");
 const modalCloseBtn = document.getElementById("modal-close-btn");
 const popForm = document.getElementById("pop-form");
 const modalText = document.getElementById("modal-text");
+const acceptBtn = document.getElementById("accept-btn");
+const declineBtn = document.getElementById("decline-btn");
+const modalChoiceBtns = document.getElementById("modal-choice-btns");
 
 modalCloseBtn.addEventListener("click", function () {
   modal.style.display = "none";
+});
+
+declineBtn.addEventListener("mouseenter", function () {
+  modalChoiceBtns.classList.toggle("reverse");
 });
 
 setTimeout(function () {
@@ -15,9 +22,6 @@ popForm.addEventListener("submit", function (e) {
   e.preventDefault();
   const popFormData = new FormData(popForm);
   const name = popFormData.get("fullName");
-  const email = popFormData.get("email");
-
-  console.log(name, email);
   modalText.innerHTML = `
   <div class="modal-inner-loading">
       <img src="images/loading.svg" class="loading">
@@ -33,5 +37,6 @@ popForm.addEventListener("submit", function (e) {
     <div class="idiot-gif">
         <img src="images/pirate.gif">
     </div>`;
+    modalCloseBtn.disabled = false;
   }, 3000);
 });

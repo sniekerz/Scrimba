@@ -14,41 +14,21 @@
   </head>
 
   <body>
-    <header>
-      <img src="nasa.png" />
-    </header>
-    <main>
-      <form id="login-form">
-        <label for="astronautName">Astronaut Name 👩‍🚀</label>
-        <input
-          type="text"
-          id="astronautName"
-          name="astronautName"
-          placeholder="Neil Armstrong"
-          required
-        />
+    <div class="container">
+      <div class="img-container">
+        <img src="sneakers.jpeg" />
+      </div>
+      <div class="product-details">
+        <h2>Nike Sneakers $400</h2>
+        <div class="buttons">
+          <button class="quantityBtn" id="decrement" disabled>-</button>
+          <span class="quantity-display" id="quantity-display">0</span>
+          <button class="quantityBtn" id="increment">+</button>
+        </div>
+        <button id="cartBtn" disabled>Add to Cart 🛒</button>
+      </div>
+    </div>
 
-        <label for="astronautEmail">Astronaut Email</label>
-        <input
-          type="email"
-          id="astronautEmail"
-          name="astronautEmail"
-          placeholder="neilarmstrong@nasa.gov"
-          required
-        />
-        <label for="astronautPassword">Astronaut Password</label>
-        <input
-          type="password"
-          id="astronautPassword"
-          name="astronautPassword"
-          placeholder="********"
-          required
-        />
-        <button type="submit">submit</button>
-      </form>
-    </main>
     <script src="index.js"></script>
   </body>
-
-  <script src="index.js"></script>
 </body>
