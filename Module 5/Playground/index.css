@@ -4,56 +4,50 @@ body {
   padding: 0;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+  color: #0c4a6e;
+}
+
 .container {
   display: flex;
-  gap: 40px;
-
-  width: 450px;
-  margin: 20px auto;
-  justify-content: space-around;
-  align-items: center;
-  align-content: center;
-}
-
-h2 {
-  margin: 0;
-}
-
-.product-details {
-  display: flex;
   flex-direction: column;
-  gap: 15px;
+  width: 380px;
+  margin: 40px auto;
+  padding: 25px;
+  align-items: center;
+  border: 3px solid #a5f3fc;
+  border-radius: 3px;
+  background-color: deepskyblue;
 }
 
-button {
-  font-size: 25px;
-  cursor: pointer;
-  padding: 12px;
-}
-
-.quantityBtn {
-  padding: 5px;
-}
-
-.buttons {
+.message {
   display: flex;
+  gap: 20px;
+  padding: 8px;
   justify-content: space-between;
+  width: 100%;
+  font-size: 14px;
+  border-radius: 3px;
+  margin-bottom: 3px;
 }
 
-.quantityBtn {
-  width: 75px;
+.from {
+  width: 95px;
 }
 
-.img-container {
-  width: auto;
+.message-text {
+  width: 200px;
 }
 
-img {
-  width: 178px;
-  margin: 0;
-  display: block;
+.unread {
+  font-weight: 800;
+  border: 2px solid #0369a1;
+  background-color: #a5f3fc;
 }
 
-.quantity-display {
-  font-size: 32px;
+.read {
+  font-weight: 400;
+  border: 2px solid #a5f3fc;
+  background-color: white;
 }
